@@ -1,0 +1,11 @@
+[Unit]
+Description=Display log server
+
+[Service]
+Type=simple
+ExecStart=/home/pi/display-log-server/display-log-server.py
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target
