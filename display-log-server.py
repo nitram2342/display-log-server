@@ -13,7 +13,7 @@ MMM_HOST="localhost"
 MMM_PORT=8080
 
 def activate_screen():
-    os.system("xset s reset")
+    os.system("export DISPLAY=:0; xset s reset")
     
 class MyTCPHandler(socketserver.StreamRequestHandler):
     
