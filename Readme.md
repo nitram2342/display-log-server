@@ -13,7 +13,6 @@ Clone the code to your Raspberry Pi and install the service by executing:
 
 # Usage
 
+> echo error helium oh shit something failed | nc 10.0.0.23 9999
 
-> echo helium error oh shit something failed | nc 10.0.0.23 9999
-
-The first word refers to a hostname, the second string is either "info", "warning" or "error" and refers to the message type. The rest of the line is the message to log.
+The first word is either "info", "warning" or "error" and refers to the message type. The rest of the line is the message to log. By convention the second word refers to a host that sent the message, but that is only a convention and you can send what you like.
