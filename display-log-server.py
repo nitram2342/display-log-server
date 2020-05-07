@@ -12,10 +12,10 @@ BIND_PORT=9999
 MMM_HOST="localhost"
 MMM_PORT=8080
 
-SCREEN_TIMOUT=120
+SCREEN_TIMEOUT=120
 
 def activate_screen():
-    os.system(f"export DISPLAY=:0; xset s {SCREEN_TIMOUT}; xset s reset; xset s default")
+    os.system("export DISPLAY=:0; xset s %s; xset s reset; xset s default" % SCREEN_TIMEOUT)
     
 class MyTCPHandler(socketserver.StreamRequestHandler):
     
